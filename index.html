@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+
+     <!-- STYLE SETUP (<style>
+                         .dontTouch {
+                              user-select: none;
+                              font-size: 96px;
+                              font-weight: bold;
+                         }
+                    </style>)-->
+
+     <style>
+          .dontTouch {
+               user-select: none;
+               font-size: 96px;
+               font-weight: bold;
+          }
+                    </style>
+     <title>Idle Game v0.1</title>
+     <script>
+          var generics = 0;
+          function generic_clicked(){
+               generics++;
+               document.querySelector("#generics").innerHTML = "you have "+generics+" generics";
+          }
+     </script>
+</head>
+<body>
+     <h1 id="generics">you have 0 generics</h1>
+     <button onclick="generic_clicked()">Get 1 generic</button>
+
+     <div class="dontTouch">
+          <h4>Clicker Game v0.1</h4>
+     </div>
+</body>
